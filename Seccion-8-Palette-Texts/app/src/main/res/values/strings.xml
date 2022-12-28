@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Seccion8-PaletteTexts</string>
+    <string-array name="countries_array">
+        <item>Buenos Aires</item>
+        <item>Uruguay</item>
+        <item>Paraguay</item>
+        <item>Chile</item>
+        <item>Bolivia</item>
+        <item>Brasil</item>
+        <item>Peru</item>
+        <item>Colombia</item>
+        <item>Ecuador</item>
+        <item>Costa Rica</item>
+        <item>Puerto Rico</item>
+    </string-array>
+</resources>
