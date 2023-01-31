@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Curso-Android/Seccion-10-Palette-Widget/app/src/main/res/drawable/sb_progress_bg.xml" value="0.1935" />
+        <entry key="..\:/Curso-Android/Seccion-10-Palette-Widget/app/src/main/res/drawable/sb_thumb.xml" value="0.1925" />
+        <entry key="..\:/Curso-Android/Seccion-10-Palette-Widget/app/src/main/res/drawable/searchview_bg.xml" value="0.2985" />
+        <entry key="..\:/Curso-Android/Seccion-10-Palette-Widget/app/src/main/res/layout/activity_search_view.xml" value="0.358695652173913" />
+        <entry key="..\:/Curso-Android/Seccion-10-Palette-Widget/app/src/main/res/layout/activity_widget.xml" value="0.15956969968623935" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

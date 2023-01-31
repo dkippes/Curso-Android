@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/pbMedium"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/pbSmall"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/pbLarge"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/pbIndeterminado"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+
+        <ProgressBar
+            android:id="@+id/pbDeterminado"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="300"
+            android:progress="125"
+            android:backgroundTint="@color/purple_700"
+            android:progressTint="@color/teal_700"
+            android:indeterminate="false" />
+
+        <ProgressBar
+            android:id="@+id/pbSecundaria"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="300"
+            android:progress="125"
+            android:secondaryProgress="750"
+            android:backgroundTint="@color/purple_700"
+            android:progressTint="@color/teal_700"
+            android:indeterminate="false"
+            android:secondaryProgressTint="@color/black"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/black"
+            />
+
+        <SeekBar
+            android:id="@+id/sbNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumbTint="@color/purple_700"
+            android:backgroundTint="@color/black"
+            android:progressTint="@color/teal_700"
+            android:max="100"
+            android:progress="30"
+            />
+
+        <SeekBar
+            android:id="@+id/sbCustom"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="45"
+            android:thumb="@drawable/sb_thumb"
+            android:progressDrawable="@drawable/sb_progress_bg"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:numStars="5"
+            android:rating="3.5"
+            android:backgroundTint="@color/purple_700"
+            android:progressTint="@color/teal_700"
+            android:stepSize="0.5"
+            android:isIndicator="false"
+            style="@android:style/Widget.Material.Light.RatingBar.Small"
+            />
+
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3/5"/>
+
+
+
+<!--        <CalendarView-->
+<!--            android:id="@+id/cvEjemplo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/tvFecha"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text="Fecha seleccionada: " />-->
+
+        <VideoView
+            android:id="@+id/vvLocal"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <VideoView
+            android:id="@+id/vvWeb"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:backgroundTint="@color/purple_700" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="1500dp"
+            tools:ignore="WebViewLayout" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCircular"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="9dp"
+            android:src="@drawable/image"
+            app:shapeAppearanceOverlay="@style/Circular"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivRoundedSquare"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="9dp"
+            android:padding="5dp"
+            android:src="@drawable/image"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            app:strokeColor="#00BCD4"
+            app:strokeWidth="5dp"
+            />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sivCornerCut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="9dp"
+            android:padding="5dp"
+            android:src="@drawable/image"
+            app:shapeAppearanceOverlay="@style/CornerCut"
+            app:strokeColor="#00BCD4"
+            app:strokeWidth="5dp"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:src="@drawable/image"
+            />
+    </LinearLayout>
+
+</ScrollView>
