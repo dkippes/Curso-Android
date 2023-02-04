@@ -101,6 +101,14 @@ class MainActivity : AppCompatActivity() {
         rbRating.setOnRatingBarChangeListener { ratingBar, rating, _ ->
             tvRating.text = "${rating}/${ratingBar.numStars}"
         }
+
+        // NUMBER PICKER
+        var npEjemplo = findViewById<NumberPicker>(R.id.npEjemplo)
+        npEjemplo.minValue = 1
+        npEjemplo.maxValue = 60
+        npEjemplo.value = 5
+        npEjemplo.wrapSelectorWheel = true
+        npEjemplo.setFormatter { i -> String.format("%02d", i) }
     }
 
     private fun progressManager(pb: ProgressBar) {

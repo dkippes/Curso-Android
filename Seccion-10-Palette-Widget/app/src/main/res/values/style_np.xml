@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NumberPickerTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/purple_700</item>
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/teal_700</item>
+        <item name="background">@color/cardview_dark_background</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+</resources>

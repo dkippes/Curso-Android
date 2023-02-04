@@ -67,6 +67,31 @@
             android:background="@color/black"
             />
 
+        <Chronometer
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+<!--        <DatePicker-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent" />-->
+
+<!--        <TimePicker-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+        <NumberPicker
+            android:id="@+id/npEjemplo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/NumberPickerTheme"
+            />
+        <TextView
+            android:id="@+id/tvNumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Hora seleccionada: "/>
+
         <SeekBar
             android:id="@+id/sbNormal"
             android:layout_width="match_parent"
