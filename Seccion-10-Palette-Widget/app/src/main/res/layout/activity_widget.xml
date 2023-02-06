@@ -92,6 +92,19 @@
             android:layout_marginTop="16dp"
             android:text="Hora seleccionada: "/>
 
+        <me.tankery.lib.circularseekbar.CircularSeekBar
+            android:layout_width="122dp"
+            android:layout_height="147dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            app:cs_circle_stroke_width="8dp"
+            app:cs_circle_style="round"
+            app:cs_max="100"
+            app:cs_negative_enabled="true"
+            app:cs_pointer_halo_width="14dp"
+            app:cs_pointer_stroke_width="24dp"
+            app:cs_process="30" />
+
         <SeekBar
             android:id="@+id/sbNormal"
             android:layout_width="match_parent"

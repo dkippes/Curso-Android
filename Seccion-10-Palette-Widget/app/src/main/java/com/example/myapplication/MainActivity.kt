@@ -17,10 +17,13 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var activityContext : Context
+    // private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_widget)
+        // binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(R.layout.activity_widget) // Vincula el codigo con la actividad
+        // setContentView(binding.root)
         activityContext = this
         // WEBVIEW: Para activar las webview de otras paginas, hay que activar JS y habilitar en el Manifiest que tenga acceso a INTERNET
 //        var webView = findViewById<WebView>(R.id.webView)
@@ -104,11 +107,19 @@ class MainActivity : AppCompatActivity() {
 
         // NUMBER PICKER
         var npEjemplo = findViewById<NumberPicker>(R.id.npEjemplo)
+        var npNumberPicker = findViewById<TextView>(R.id.tvNumberPicker)
         npEjemplo.minValue = 1
         npEjemplo.maxValue = 60
         npEjemplo.value = 5
         npEjemplo.wrapSelectorWheel = true
         npEjemplo.setFormatter { i -> String.format("%02d", i) }
+
+        npEjemplo.setOnValueChangedListener { numberPicker, oldVal, newVal ->
+            npNumberPicker.text = "Number Picker: Antes: ${oldVal}, Ahora: ${newVal}"
+            // binding.npNumberPicker -> Otra forma de obtener variables con BINDING
+        }
+
+        // * OTRA FORMA DE AGARRAR VARIABLES
     }
 
     private fun progressManager(pb: ProgressBar) {
