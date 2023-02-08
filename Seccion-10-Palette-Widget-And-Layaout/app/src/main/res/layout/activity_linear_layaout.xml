@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearLayaout"
+    android:orientation="vertical">
+
+<!--  LINEAR SIN USAR WEIGHT  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".70"
+            android:background="@color/purple_700">
+        </View>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:background="@color/teal_700">
+        </View>
+    </LinearLayout>
+
+<!--  LINEAR USANDO WEIGHT PARA MANTENER EL ESPACIO  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/purple_700">
+        </View>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/teal_700">
+        </View>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black">
+        </View>
+    </LinearLayout>
+
+    <!--  COMBINADOS  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/purple_700"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <View
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@color/teal_700"
+                />
+            <View
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:background="@color/black"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--  HORIZONTAL  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@color/purple_700"
+            />
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_marginLeft="10dp"
+            />
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_marginLeft="10dp"
+            />
+        <View
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+<!--  VERTICAL  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/purple_700"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/teal_700"
+            android:layout_marginTop="10dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/cardview_dark_background"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
